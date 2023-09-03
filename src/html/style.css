@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #171515;
+    min-height: 100vh;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.leave-img {
+    width: 70px;
+    height: 70px;
+}
+
+.logo {
+    position: static;
+    color: white;
+    font-size: 40px;
+    margin-left: 20px;
+    margin-right: 500px;
+}
+
+                                            /*Scroll Bar*/
+/* Width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background: rgb(35, 35, 35);  
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgb(76, 76, 76);
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.navigation a {
+    position: static;
+    text-decoration: none;
+    color: aquamarine;
+    border: 3px solid white;
+    border-radius: 180px;
+    padding: 6px 15px;
+    margin: 0 10px;
+    font-weight: 600;
+    transition-duration: 500ms;  /*change*/
+}
+.navigation a:hover, 
+.navigation a.active{
+    background: aquamarine;
+    box-shadow: 10px 6px 50px 1px aquamarine;
+    color: black;
+}
+
+.text{
+    margin-top: 445px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    color: white;
+}
+span {
+    margin-left: 10px;
+    color: aquamarine;
+}
+
+.leaf2 {
+    position: fixed;
+    top: -40px;
+    left: 1420px;
+    width: 25%;
+    pointer-events: fill;
+    transition-duration: 500ms;
+}
+.leaf2:hover {
+    transform: translate(50px);
+}
+
+.leaf3 {
+    position: fixed;
+    left: -55px;
+    top: 600px;
+    transition-duration: 500ms;
+}
+.leaf3:hover {
+    transform: translateY(50px);
+}
+
+.sec {
+    top: 43vh;
+    position: relative;
+    background-color: white;
+    padding: 100px;
+}
+
+.sec h2 {
+    text-align: center;
+    font-size: 3em;
+    color: black;
+    margin-bottom: 3em;
+}
+
+.para-about-me {
+    position: relative;
+    text-align: center;
+    font-size: 2em;
+    padding-bottom: 10000px;
+}
+
+@media screen and (max-width: 1650px) {
+    .leave-img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .logo {
+        position: static;
+        color: white;
+        font-size: 20px;
+        margin-left: 20px;
+        margin-right: 500px;
+    }
+
+    .navigation a {
+        font-weight: 500;
+        color: aquamarine;
+        padding: 3px 5px;
+        margin: 0 10px;
+        font-size: 15px;
+        transition-duration: 500ms;
+    }
+
+    .text{
+        margin-top: 350px;
+        font-size: 2em;
+    } 
+
+    .leaf2 {
+        position: fixed;
+        top: -40px;
+        left: 1150px;
+        width: 25%;
+        pointer-events: fill;
+        transition-duration: 500ms;
+    }
+
+    .leaf3 {
+        position: fixed;
+        left: -55px;
+        top: 400px;
+        transition-duration: 500ms;
+    }
+}
